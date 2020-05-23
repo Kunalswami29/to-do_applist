@@ -7,6 +7,10 @@ const app=express();
 //to set the port 
 const port =8000;
 
+// to use routes
+app.use('/',require('./routes'));
+
+
 
 
 
