@@ -22,6 +22,7 @@ app.use('/',require('./routes'));
 
 
 
+
 //to check the status of server or telling express what to after setting server
 app.listen(port,function(err){
     if(err){
