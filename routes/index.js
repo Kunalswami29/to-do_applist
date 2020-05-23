@@ -5,7 +5,7 @@ const route=express.Router();
 //to access controllers
 const todoController=require('../controllers/todo_home');
 
-//rendering homfile
+//rendering homefile
 route.get('/',todoController.home);
 
 
