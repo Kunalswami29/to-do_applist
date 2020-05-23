@@ -9,6 +9,9 @@ const port =8000;
 // to use mongoose database
 const db= require('./config/mongoose')
 
+//to access models or schema
+const Description=require('./models/descriptions')
+
 // to use the layouts
 const expressLayout=require('express-ejs-layouts');
 app.use(expressLayout);
