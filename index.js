@@ -12,6 +12,14 @@ const expressLayout=require('express-ejs-layouts');
 app.use(expressLayout);
 
 
+//to extract style files for other pages
+app.set('layout extractStyles',true);
+app.set('layout extractScripts',true);
+
+//to use static file
+app.use(express.static('./assets'));
+
+
 // to set the view engine
 app.set('view engine','ejs');
 app.set('views','./views');
