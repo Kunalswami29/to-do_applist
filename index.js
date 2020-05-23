@@ -6,6 +6,8 @@ const app=express();
 
 //to set the port 
 const port =8000;
+// to use mongoose database
+const db= require('./config/mongoose')
 
 // to use the layouts
 const expressLayout=require('express-ejs-layouts');
