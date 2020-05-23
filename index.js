@@ -9,6 +9,7 @@ const port =8000;
 
 // to use the layouts
 const expressLayout=require('express-ejs-layouts');
+app.use(expressLayout);
 
 
 // to set the view engine
