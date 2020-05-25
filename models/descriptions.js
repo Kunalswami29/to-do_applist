@@ -1,5 +1,5 @@
 const mongoose= require('mongoose');//accessing the mongoose library
-const descripSchema= new mongoose.Schema({   //setting up the schema for db
+const descripSchema = new mongoose.Schema({   //setting up the schema for db
     name:{
         type:String,
         require:true
@@ -9,11 +9,11 @@ const descripSchema= new mongoose.Schema({   //setting up the schema for db
         require:true
     },
     date:{
-        type:"String",
+        type:String,
         require:true
     }
-})
+});
 
 const Description=mongoose.model('Description',descripSchema);//this is to create the collections we want to store in DB
 
-module.exports=Description;
+module.exports = Description;

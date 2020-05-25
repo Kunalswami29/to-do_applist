@@ -8,7 +8,10 @@ const todoController=require('../controllers/todo_home');
 
 //rendering homefile
 route.get('/',todoController.home);
+//this is to render to the controller create func
 route.post('/create-task',todoController.Create);
+// this is to render to delete function
+route.get('/delete-task/',todoController.delete);
 
 
 

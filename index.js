@@ -8,7 +8,7 @@ const port =8000;
 // to use mongoose database
 const db= require('./config/mongoose')
 //to access models or schema
-const Description=require('./models/descriptions')
+const Description=require('./models/descriptions');
 
 //to use express
 const app=express();
@@ -16,6 +16,7 @@ const app=express();
 app.set('view engine','ejs');
 app.set('views','./views');
 
+// this is to use the middlewares
 app.use(express.urlencoded());
 
 // to use the layouts
@@ -32,16 +33,6 @@ app.use(express.static('./assets'));
 
 // to use routes
 app.use('/',require('./routes'));
-
-
-
-
-
-
-
-
-
-
 
 
 
