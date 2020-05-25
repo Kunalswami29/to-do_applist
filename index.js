@@ -1,21 +1,26 @@
 // to access express library
 const express=require('express');
+// to acess path
+const path= require('path');
+//to set the port 
+const port =8000;
+
+// to use mongoose database
+const db= require('./config/mongoose')
+//to access models or schema
+const Description=require('./models/descriptions')
 
 //to use express
 const app=express();
+// to set the view engine
+app.set('view engine','ejs');
+app.set('views','./views');
 
-//to set the port 
-const port =8000;
-// to use mongoose database
-const db= require('./config/mongoose')
-
-//to access models or schema
-const Description=require('./models/descriptions')
+app.use(express.urlencoded());
 
 // to use the layouts
 const expressLayout=require('express-ejs-layouts');
 app.use(expressLayout);
-
 
 //to extract style files for other pages
 app.set('layout extractStyles',true);
@@ -23,12 +28,6 @@ app.set('layout extractScripts',true);
 
 //to use static file
 app.use(express.static('./assets'));
-
-
-// to set the view engine
-app.set('view engine','ejs');
-app.set('views','./views');
-
 
 
 // to use routes

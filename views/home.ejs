@@ -1,23 +1,54 @@
 <link rel="stylesheet" href="/css/home.css">
-<div id="heading">
-    TO-DO APP
+<div id="heading">  <!---this is the page heading-->
+      <h1>TO-DO APP</h1> 
 </div>
-<div id="list-container">
-    <div id="insert-container">
-        <div>
-            <form id="input-cont" action="" method="POST">
-                <span>
-                    <i class="fas fa-file-medical"></i>
-                </span>
-                <input  type="text",name="description" placeholder="what do you need to do?">
-                <span>
-                    <a href="">
-                        <i class="far fa-plus-square"></i>
-                    </a>
-                    
-                </span>
-            </form>
+<main id="main-container">
+    <div id="insert-section">
+        <p id="title">Description</p>
+    <form action="" method="POST">
+        <div id="insert-bar">
+            <i class="fas fa-file-medical"></i>
+             <input  id="input-box" type="text" name="description" placeholder="what do you like to do?">
+             <a href="">
+                <i class="far fa-plus-square"></i>
+             </a>   
         </div>
-    </div>
+        <div id="category">
+            <p>Category:</p>
+            <select id="sec-box" name="personal">
+                <option>personal</option>
+                <option>workout</option>
+                <option>office</option>
+                <option>shoping</option>
+            </select> 
+            <p>Date:</p>
+            <input id="date-box" type="date" name="date">  
+        </div> 
+    </form>
+        <div id="task-list-container">
+            <ul >
+                <% for(let i of task_list){ %>
+                    <li class="tasks"> 
+                        <div class="details">
+                            <p><%= i.name%></p>
+                            <p><%= i.category%></p>
+                            <p><%= i.Date</p>
+                        </div>
+                        <div class="delete">
+                            <a href="/delete-contact/?id=<%=i._id%>">
+                                <i class="fas fa-window-close"></i>
+                            </a>
+                            
 
-</div>
+                        </div>
+                        
+                    </li>
+                <% } %>
+            </ul>
+           
+        </div>
+        
+    </div>
+         
+
+</main>

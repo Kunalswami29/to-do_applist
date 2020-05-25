@@ -1,9 +1,105 @@
 body{
     margin: 0;
-    text-align: center;
     background-image: linear-gradient(#42c0e9,#e6c488);
-    margin: 100px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
 }
-a{
+/* heading */
+#heading{
+    margin-top: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+/* main container */
+#main-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 40%;
+    height: max-content;
+    margin-top:120px;
+    border: 2px solid black;
+    background-image: linear-gradient(45deg, #9bb2f3, #eadcff);
+}
+#insert-section{
+    display: flex;
+    width: 90%;
+    border: 2px solid red;
+    padding: 7px;
+    margin:10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#insert-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#input-box{
+    padding :3px;
+    width:85%;
+    height: 10%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0.5px 0.5px darkblue;
+}
+#category{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#date-box{
+    width:45%;
+    height: 15%;
+    display: flex;
+    margin-top: 18px;
+}
+#sec-box{
+    width: 45%;
+    height:20%;
+    color: darkgrey;
+    margin-top: 18px;
+}
+
+/* list section */
+.tasks{
+    padding: 3px 10px;
+    border:1px solid black;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgrey;
+    color:black;
+    display: flex;
+}
+.tasks .details {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 90%;
+}
+.tasks:hover{
+    background-color: lightgrey;
+}
+.tasks .delete{
+    width: 10%;
+    padding :3px;
+    text-align: center;
+    margin-top: 5px;
+}
+.tasks p{
+    margin : 5px 0;
+}
+
+/* common */
+#title{
+    color:rgb(19, 17, 17);
+    margin: 0;
+    font-size: 1rem;
+}
+i{
+    font-size: 1.5rem;
     color:black;
 }
+
