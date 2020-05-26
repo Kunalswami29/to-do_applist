@@ -49,6 +49,8 @@ body{
     width:85%;
     border-radius: 5px;
     box-shadow: 0px 0px 0.5px 0.5px darkblue;
+    font-size: 1rem;
+    font-family: sans-serif;
 }
 /* category area */
 #category{
@@ -68,8 +70,29 @@ body{
 #sec-box{
     width: 45%;
     height:20%;
-    color: darkgrey;
+    color:black;
     margin-top: 20px;
+}
+#date-text{
+    display: flex;
+    flex-direction: row;
+    margin: 24px 0 0 -120%;
+    font-size: 0.7rem;
+    font-family: sans-serif;
+}
+#date-text i{
+    font-size: 0.8rem;
+    margin-right: 3px;
+    color: chocolate;
+}
+#category-text{
+    background: linear-gradient(45deg, #e79e74, #73b3e2);
+    padding: 2px;
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    margin-top: 5px;
+
 }
 
 /* list section */
@@ -112,6 +135,10 @@ body{
     padding :2px;
     text-align: center;
     margin-left: 20px;
+    margin-top: 7px;
+}
+a i{
+    color: #196297;
 }
 /* the checkbox div */
 .tasks #checkbx{
@@ -135,12 +162,21 @@ body{
 /* common */
 #title{
     color:rgb(19, 17, 17);
-    margin: 0;
-    font-size: 1rem;
+    margin-bottom:5;
+    font-size: 1.2rem;
     font-family: sans-serif;
+    margin:10px 0 10px;
+    font-weight: 500;
 }
 i{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color:black;
+}
+#file{
+    margin-top: 3px;
+}
+#button{
+    margin: -1px;
+    background:border-box;
 }
 
